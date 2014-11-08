@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://pmgfrederico-github-io-storage.s3.eu-west-1.amazonaws.com/sitemap.xml

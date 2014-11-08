@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="SwaggerIU"
+  />
+  <title>SwaggerUI</title>
+  <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@4.4.1/swagger-ui.css" />
+</head>
+<body> 
+  <div id="swagger-ui"></div>
+  <script src="https://unpkg.com/swagger-ui-dist@4.4.1/swagger-ui-bundle.js"></script>
+  <script src="https://unpkg.com/swagger-ui-dist@4.4.1/swagger-ui-standalone-preset.js"></script>
+  <script>    
+    window.onload = () => {
+      window.ui = SwaggerUIBundle(
+      {
+        spec: JSON.parse("{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"Sample API\",\"description\":\"Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.\",\"version\":\"0.1.9\"},\"servers\":[{\"url\":\"http://api.example.com/v1\",\"description\":\"Optional server description, e.g. Main (production) server\"},{\"url\":\"http://staging-api.example.com\",\"description\":\"Optional server description, e.g. Internal staging server for testing\"}],\"paths\":{\"/users\":{\"get\":{\"summary\":\"Returns a list of users.\",\"description\":\"Optional extended description in CommonMark or HTML.\",\"responses\":{\"200\":{\"description\":\"A JSON array of user names\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}}}}}}}}}}"),
+        dom_id: '#swagger-ui',
+      });
+    };
+  </script>
+</body>
+</html>
