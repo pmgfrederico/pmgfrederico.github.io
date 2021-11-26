@@ -1,3 +1,3 @@
-function insertText(){
-    document.body.innerText = "Cenas";
+function mutateBody(){
+    document.body.style.backgroundColor = "grey";
 }
