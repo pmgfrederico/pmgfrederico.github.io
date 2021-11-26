@@ -1,1 +1,3 @@
-document.body.innerText = "O conteúdo é introduzido pelo js bloqueado pelo robots. Crawl </=> de dependência.";
+function insertText(){
+    document.body.innerText = "Cenas";
+}
